@@ -16,6 +16,7 @@ dependencies = [
     "streamlit>=1.40.0",
     "circlify>=0.15.1",
     "prince>=0.21.0",
+    "tqdm>=4.70.1",
 ]
 
 [dependency-groups]
