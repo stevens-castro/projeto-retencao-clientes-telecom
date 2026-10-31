@@ -1,108 +1,121 @@
 # Fonte de dados
 
 Esta página descreve **de onde vêm os dados** do projeto: a origem, como ela está
-organizada, qual é o grão de cada registro e como a carga é reproduzida.
-
-!!! tip "Como preencher esta página"
-    Substitua os textos em destaque pelos do seu projeto. Preencha antes de começar a
-    análise — quem chega depois no repositório lê esta página primeiro.
-
-    Regras práticas:
-
-    - descreva a origem de forma que **outra pessoa consiga acessá-la** (sistema, caminho,
-      credencial necessária), sem expor segredos ou caminhos com dados pessoais;
-    - registre o **grão** em uma frase: "cada linha é um(a) …";
-    - anote **volumetria e período**, que são o que dimensiona todo o resto do projeto;
-    - liste as **métricas aditivas** separadamente das dimensões — são elas que podem ser
-      somadas com segurança;
-    - deixe a seção de reprodução com os comandos reais, testados.
+organizada, o que cada linha representa e como refazer a carga.
 
 ## Origem
 
-<span style="color:red">**Descreva o sistema de origem, a área responsável e em que formato
-os dados são publicados.**</span>
+A base é a **Telco Customer Churn**, um conjunto de dados de exemplo publicado pela IBM
+e muito usado em cursos e no Kaggle. Ela descreve os clientes de uma operadora de
+telefonia e internet **fictícia**. Chega como um único arquivo de texto separado por
+vírgulas (CSV).
 
 ```
-CAMINHO_DA_ORIGEM  (caminho de rede, URI do bucket ou string de conexão)
+data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
 ```
 
-O caminho pode ser sobrescrito pela variável de ambiente `NOME_DA_VARIAVEL`.
+O arquivo foi baixado uma vez e guardado no repositório. Não há senha, servidor ou
+caminho de rede envolvido.
 
 !!! warning "Dados sensíveis"
-    Não versione caminhos que contenham nome de usuário, token ou host interno
-    identificável. Prefira um placeholder aqui e o valor real em um `.env` fora do git.
+    A base é pública e os clientes são fictícios: não há dado pessoal real. A única coluna
+    que identifica alguém é o `customerID`, um código sem ligação com pessoas reais, e ela
+    não é usada na análise.
 
 ### Extração vigente
 
-<span style="color:red">**Identifique a extração em uso (nome, data) e o que mudou em
-relação à anterior. Se colunas foram acrescentadas ou removidas, liste-as.**</span>
+Usamos a versão original do arquivo, sem nenhuma alteração. As 21 colunas são:
 
 | Coluna | Conteúdo |
 |:---|:---|
-| `nome_da_coluna` | &lt;o que ela representa&gt; |
-| `nome_da_coluna` | &lt;o que ela representa&gt; |
+| `customerID` | código único do cliente |
+| `gender` | gênero (`Female` / `Male`) |
+| `SeniorCitizen` | se é idoso (`1`) ou não (`0`) |
+| `Partner` | se tem parceiro(a) (`Yes` / `No`) |
+| `Dependents` | se tem dependentes (`Yes` / `No`) |
+| `tenure` | quantos meses o cliente está na empresa (0 a 72) |
+| `PhoneService` | se tem telefone |
+| `MultipleLines` | se tem mais de uma linha (`Yes` / `No` / `No phone service`) |
+| `InternetService` | tipo de internet (`DSL`, `Fiber optic` ou `No`) |
+| `OnlineSecurity` | se tem segurança online (`Yes` / `No` / `No internet service`) |
+| `OnlineBackup` | se tem backup online (idem) |
+| `DeviceProtection` | se tem proteção do aparelho (idem) |
+| `TechSupport` | se tem suporte técnico (idem) |
+| `StreamingTV` | se tem TV por streaming (idem) |
+| `StreamingMovies` | se tem filmes por streaming (idem) |
+| `Contract` | tipo de contrato (`Month-to-month`, `One year`, `Two year`) |
+| `PaperlessBilling` | se recebe a fatura só pela internet |
+| `PaymentMethod` | forma de pagamento (cheque eletrônico, cheque pelo correio, transferência automática, cartão automático) |
+| `MonthlyCharges` | valor da mensalidade (em dólar) |
+| `TotalCharges` | total já cobrado do cliente (em dólar) |
+| `Churn` | se o cliente cancelou (`Yes` / `No`) |
+
+O dicionário completo, gerado no notebook 00, está em `data/processed/dicionario.csv`.
 
 ## Organização da origem
 
-<span style="color:red">**Explique o esquema de particionamento ou a estrutura de
-diretórios/tabelas da origem.**</span>
+É um arquivo só, sem divisões (partições) nem várias tabelas.
 
 ```
-raiz_da_origem/
-├── particao_1=valor/
-│   ├── particao_2=valor/arquivo.parquet
-│   └── ...
-└── particao_1=valor/
+data/raw/
+└── WA_Fn-UseC_-Telco-Customer-Churn.csv
 ```
 
 | Característica | Valor |
 |:---|---:|
-| Partições | &lt;n&gt; |
-| Arquivos | &lt;n&gt; |
-| Registros | &lt;n&gt; |
-| Colunas | &lt;n&gt; |
-| Volume na origem | &lt;n&gt; GB |
-| Período | &lt;aaaa a aaaa&gt; |
+| Partições | 1 |
+| Arquivos | 1 |
+| Registros | 7.043 |
+| Colunas | 21 |
+| Volume na origem | ~0,98 MB |
+| Período | não informado (é uma "foto" da base em um único momento) |
 
 ## Grão e conteúdo
 
-Cada linha é um(a) **&lt;grão do registro&gt;** (`coluna_identificadora`).
+Cada linha é um **cliente** (`customerID`).
 
-<span style="color:red">**Descreva as dimensões disponíveis e, se a tabela for
-desnormalizada, quantas dimensões estão embutidas nela.**</span>
+A tabela é "achatada": tudo sobre o cliente está numa linha só. Dá para enxergar quatro
+grupos de informação dentro dela: **perfil** (gênero, idoso, parceiro, dependentes),
+**serviços contratados** (telefone, internet e serviços extras), **conta** (tempo de casa,
+contrato, fatura e pagamento) e **valores cobrados**. A coluna `Churn` é o "rótulo", ou
+seja, a resposta que um modelo supervisionado tentaria prever.
 
-As métricas aditivas são:
+As métricas que podem ser somadas com segurança (métricas aditivas) são:
 
 | Métrica | Descrição |
 |:---|:---|
-| `nome_da_metrica` | &lt;o que é contabilizado e em que unidade&gt; |
-| `nome_da_metrica` | &lt;o que é contabilizado e em que unidade&gt; |
+| `MonthlyCharges` | valor da mensalidade atual do cliente, em dólar |
+| `TotalCharges` | soma de tudo que já foi cobrado do cliente, em dólar |
+
+`tenure` (meses de casa) é um número, mas somar o tempo de casa de clientes diferentes não
+tem significado de negócio; faz sentido olhar média ou mediana.
 
 ## Fluxo de dados no projeto
 
 ```mermaid
 flowchart LR
-    A["Origem<br/>formato e volume"] --> B["data/raw<br/>o que é materializado"]
-    B --> C["data/processed/base curada<br/>colunas curadas"]
-    C --> D["data/processed/agregados<br/>um por objetivo"]
-    D --> E["notebooks<br/>figuras, tabelas e relatórios"]
+    A["Origem<br/>CSV IBM, 7.043 × 21"] --> B["data/raw<br/>arquivo original, sem alteração"]
+    B --> C["data/processed/..._columns_selected.csv<br/>sem customerID e sem Churn (nb 01)"]
+    C --> D["data/processed/..._tratado.csv<br/>base corrigida (nb 02)"]
+    D --> E["data/processed/..._preprocessed.csv<br/>base em números de 0 a 1 (nb 03)"]
+    E --> F["notebooks 04<br/>segmentação"]
 ```
 
-<span style="color:red">**Indique o notebook e o módulo responsáveis pela carga, e se ela é
-idempotente (pode ser reexecutada sem duplicar dado).**</span>
+A leitura do arquivo bruto é feita nos notebooks `00-dicionario-dados` e
+`01-analise-exploratoria`. A carga pode ser repetida quantas vezes quiser sem duplicar
+nada (é **idempotente**): cada notebook lê o arquivo anterior e grava o seu por cima,
+sempre com o mesmo resultado.
 
 ## Fontes complementares
 
-Dados que não vêm da origem principal, mas entram na análise.
-
-| Arquivo | Conteúdo |
-|:---|:---|
-| `data/raw/arquivo.csv` | &lt;o que contém e para que serve&gt; |
+Nenhuma. Todo o projeto usa apenas o arquivo da base Telco.
 
 ## Reprodução
 
 ```bash
-# comandos que refazem a carga do zero
-uv run invoke ingestao
-uv run invoke preparacao
+# instalar o ambiente
+uv sync
+
+# abrir o JupyterLab e executar, em ordem, os notebooks 00, 01, 02 e 03
+uv run invoke lab
 ```

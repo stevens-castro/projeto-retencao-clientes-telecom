@@ -1,8 +1,8 @@
 # Entendimento de negócio
 ## Marcos negociais
 ???+ abstract "Fase 1: Preparação do ambiente"
-    - [ ] Criar repositório gitlab
-    - [ ] Instalar ferramentas do projeto
+    - [x] Criar repositório (GitHub)
+    - [x] Instalar ferramentas do projeto
     
 
 ???+ abstract "Fase 2: Entendimento de negócio"
@@ -10,16 +10,16 @@
     - [ ] Produzir relatório mineração dos dados
 
 ???+ abstract "Fase 3: Entendimento dos dados"    
-    - [ ] Gerar conjunto de dados
-    - [ ] Produzir relatório qualidade dos dados
-    - [ ] Realizar descrição dos dados
-    - [ ] Realizar análise exploratória
-    - [ ] Produzir relatório do entendimento dos dados
+    - [x] Gerar conjunto de dados
+    - [x] Produzir relatório qualidade dos dados
+    - [x] Realizar descrição dos dados
+    - [x] Realizar análise exploratória
+    - [x] Produzir relatório do entendimento dos dados
 
 ???+ abstract "Fase 4: Preparação dos dados"
-    - [ ] Gerar script de limpeza dos dados
-    - [ ] Gerar conjunto de dados processado
-    - [ ] Produzir relatório preparação dos dados
+    - [x] Gerar script de limpeza dos dados
+    - [x] Gerar conjunto de dados processado
+    - [x] Produzir relatório preparação dos dados
 
 ???+ abstract "Fase 5: Modelagem"
     - [ ] Gerar desenho do experimento da modelagem
@@ -54,13 +54,9 @@ Um time técnico é responsável por garantir a eficiência e a qualidade de pro
 
 |Nome|Cargo/ Função|E-mail|
 |:---|:------------|:-----|
-|Membro da equipe 1|Analista de Negócios|membro1@exemplo.com|
-|Membro da equipe 2|Analista de Requisitos|membro2@exemplo.com|
-|Membro da equipe 3|Arquiteto de Dados|membro3@exemplo.com|
-|Membro da equipe 4|Engenheiro de Dados|membro4@exemplo.com|
-|Membro da equipe 5|Analista de Business Intelligence|membro5@exemplo.com|
-|Membro da equipe 6|Analista de Business Intelligence|membro6@exemplo.com|
-|Membro da equipe 7|Cientista de Dados|membro7@exemplo.com|
+|Stevens Castro|Integrante do grupo|—|
+|Tevin|Integrante do grupo|—|
+|Thierry Pereira Canoco|Integrante do grupo|—|
 
 #### Esecialistas de negócio
 Especialistas de negócios são indivíduos altamente qualificados que têm um conhecimento profundo da indústria e das operações de negócios da área. Eles trabalham em colaboração com equipes de tecnologia de dados para identificar oportunidades de melhoria em processos e tomar decisões informadas com base em dados. Eles também ajudam a definir objetivos e métricas claras para o projeto de dados, garantindo que ele esteja alinhado à estratégia de negócios geral da área. A presença de especialistas de negócios é crucial em projetos de dados, pois eles ajudam a garantir que os resultados sejam valiosos e relevantes para a empresa. Abaixo segue o time de especialistas para esse projeto:
@@ -89,7 +85,12 @@ A equipe de infraestrutura é responsável por fornecer a base tecnológica nece
 A análise de requisitos é uma etapa iterativa e pode exigir várias revisões para garantir que todos os requisitos sejam cobertos e validados pelos stakeholders. Além disso, é importante manter uma comunicação clara e frequente com todas as partes interessadas para garantir que todos os requisitos sejam identificados e considerados no projeto.
 
 #### Necessidades de negócio
-<span style="color:red">**Adicione um texto**</span>
+A operadora perde cerca de **1 em cada 4 clientes** (26,5% da base cancelou). Para reduzir
+essa perda, a área de retenção precisa saber **quais tipos de cliente existem** na carteira
+e o que caracteriza cada um: que contrato têm, que serviços usam, como pagam e há quanto
+tempo estão na empresa. Com esses perfis em mãos, dá para planejar ações diferentes para
+cada grupo (por exemplo, oferecer contrato anual a quem está no mensal, ou serviços de
+proteção a quem não tem nenhum), em vez de tratar todos os clientes do mesmo jeito.
 
 #### Requisitos funcionais
 <span style="color:red">**Adicione um texto**</span>
@@ -99,15 +100,27 @@ No que tange ao campo ciência de dados dentro de projetos que envolvem essa ár
 
 |Ferramenta            | Descrição                            |
 |:---------------------|:--------------------------------     |
-|:simple-github: Gitlab|Gerenciar o controle de versões.      |
+|:simple-github: GitHub|Gerenciar o controle de versões.      |
 |:simple-uv: uv|Para gerenciamento de libs do projeto.|
-|:simple-python: uv python|Controle de versões do python.        |
+|:simple-python: uv python|Controle de versões do python (3.12).        |
 |:simple-jupyter:Jupyter notebook|Ambiente para escrever os scripts necessários.|
-|:fontawesome-solid-list-check: Python|Realizar as atividades de ETL, análise exploratória dos dados e construção de modelos preditivos, bem como atividades relacionadas.|
-|:material-bookshelf: Bibliotecas|Pandas, numpy Scrapy, Selenium, requests, scikit-learn, Matplotlib, Seaborn, Plotly, Folium.|
+|:fontawesome-solid-list-check: Python|Realizar a leitura e o tratamento dos dados, a análise exploratória e a construção dos modelos de agrupamento.|
+|:material-bookshelf: Bibliotecas|pandas e numpy (tabelas e contas), matplotlib e seaborn (gráficos), scipy (V de Cramér), prince (análise de correspondência), circlify (gráficos de círculos), scikit-learn (pré-processamento e agrupamento), umap-learn e mlxtend (modelagem).|
 
 #### Requisitos de dados
-<span style="color:red">**Adicione um texto**</span>
+Para segmentar os clientes, o projeto precisa de **uma linha por cliente** com
+informações sobre:
+
+- **perfil**: se é idoso, se tem parceiro(a) e dependentes;
+- **serviços contratados**: telefone, tipo de internet e serviços extras (segurança,
+  backup, proteção do aparelho, suporte, streaming);
+- **contrato e pagamento**: tempo de casa, tipo de contrato, fatura digital e forma de
+  pagamento;
+- **valores**: mensalidade.
+
+A base *Telco Customer Churn* atende a todos esses pontos (veja
+[Entendimento dos dados](entendimento-dados.md)). Ela **não** tem datas, dados de uso ou
+registros de atendimento, o que limita o que pode ser respondido.
 
 ### Riscos
 Os projetos de ciência de dados apresentam alguns riscos que devem ser considerados e gerenciados para garantir o sucesso do projeto. Alguns dos riscos mais comuns incluem:
@@ -124,15 +137,21 @@ Os projetos de ciência de dados apresentam alguns riscos que devem ser consider
 <span style="color:red">**Adicione um texto**</span>
 
 ## Mineração de dados
-<span style="color:red">**Adicione um texto**</span>
+Neste projeto não há coleta em sistemas da empresa: usamos um único arquivo público, a
+base *Telco Customer Churn* da IBM, salvo em `data/raw/` (veja
+[Fonte dos dados](fonte-dados.md)).
 
-Após as transformações, os dados são armazenados no Data Warehouse corporativo para que outros profissionais envolvidos no projeto possam consumir os dados e atuar nas respectivas especialidades:
+Do ponto de vista técnico, a meta de mineração é **agrupar clientes parecidos** usando
+aprendizado **não supervisionado**: o algoritmo recebe as características dos clientes,
+mas **não** recebe a informação de quem cancelou (`Churn`), e precisa encontrar os grupos
+sozinho. Para isso, os dados passam por quatro etapas, cada uma num notebook:
 
-- Business intelligence
-- Analytics
-- Ciência de dados
-- Governança dos dados
+1. **Dicionário de dados** (notebook 00): o que é cada coluna e de que tipo ela é;
+2. **Análise exploratória** (notebook 01): como os dados se distribuem e se relacionam;
+3. **Ajustes nos dados** (notebook 02): correção de vazios e de categorias repetidas;
+4. **Preparação** (notebook 03): escolha das colunas e conversão de tudo para números de
+   0 a 1, formato que o algoritmo de agrupamento entende.
 
-Todo processo da coleta de dados é influenciado por questões éticas, como a privacidade e a segurança dos dados. A área de governança de dados tem o foco em garantir que sejam cumpridas as leis e regulamentos aplicáveis, incluindo a proteção de dados pessoais, e que os dados coletados sejam usados ​​de maneira responsável e respeitosa.
-
-Em resumo, essa é uma etapa crítica no processo de mineração de dados e requer planejamento cuidadoso e atenção aos detalhes para garantir resultados precisos e confiáveis. Os especialistas do negócio devem selecionar cuidadosamente as fontes de dados e garantir que as práticas de coleta de dados sejam éticas e adequadas às leis e regulamentos aplicáveis.
+Os arquivos gerados em cada etapa ficam em `data/processed/` e são usados pelos notebooks
+seguintes. Como os clientes são fictícios e o `customerID` não é usado, não há questão de
+privacidade de dados pessoais neste projeto.
