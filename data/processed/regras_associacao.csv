@@ -1,0 +1,169 @@
+antecedente,consequente,itens,suporte,confianca,lift
+InternetService=No,MonthlyCharges=baixo + ServicosProtecao=baixo,3,0.21666903308249325,1.0,3.105379188712522
+MonthlyCharges=baixo + ServicosProtecao=baixo,InternetService=No,3,0.21666903308249325,0.6728395061728395,3.105379188712522
+MonthlyCharges=baixo,InternetService=No,2,0.21666903308249325,0.6490854955338154,2.995746490854956
+MonthlyCharges=baixo,InternetService=No + ServicosProtecao=baixo,3,0.21666903308249325,0.6490854955338154,2.995746490854956
+InternetService=No,MonthlyCharges=baixo,2,0.21666903308249325,1.0,2.9957464908549554
+InternetService=No + ServicosProtecao=baixo,MonthlyCharges=baixo,3,0.21666903308249325,1.0,2.9957464908549554
+MonthlyCharges=alto,InternetService=Fiber optic + StreamingMovies=Yes,3,0.23739883572341333,0.7123988069876438,2.8654624772210027
+InternetService=Fiber optic + StreamingMovies=Yes,MonthlyCharges=alto,3,0.23739883572341333,0.9548829240434038,2.8654624772210022
+InternetService=Fiber optic + StreamingTV=Yes,MonthlyCharges=alto,3,0.2364049410762459,0.9514285714285714,2.855096475744111
+MonthlyCharges=alto,InternetService=Fiber optic + StreamingTV=Yes,3,0.2364049410762459,0.7094162760971452,2.8550964757441104
+MultipleLines=Yes + StreamingTV=Yes,MonthlyCharges=alto,3,0.19423541104642908,0.8674698795180723,2.6031488544719994
+MultipleLines=Yes + StreamingMovies=Yes,MonthlyCharges=alto,3,0.19451938094561977,0.8610936517913262,2.5840147377785727
+InternetService=Fiber optic + MultipleLines=Yes,MonthlyCharges=alto,3,0.22646599460457192,0.8230134158926729,2.4697415799455027
+MonthlyCharges=alto,InternetService=Fiber optic + MultipleLines=Yes,3,0.22646599460457192,0.6795909671921602,2.4697415799455023
+InternetService=Fiber optic + Partner=Yes,MonthlyCharges=alto,3,0.16967201476643476,0.7987967914438503,2.397071070361754
+Contract=Two year,tenure=alto,2,0.18230867528042027,0.7575221238938052,2.3166427783691144
+StreamingMovies=Yes + StreamingTV=Yes,MonthlyCharges=alto,3,0.21113162004827488,0.7664948453608247,2.300137705954959
+MonthlyCharges=alto,StreamingMovies=Yes + StreamingTV=Yes,3,0.21113162004827488,0.6335747763101831,2.300137705954959
+MonthlyCharges=alto + ServicosProtecao=baixo,InternetService=Fiber optic,3,0.222774385915093,1.0,2.274870801033592
+Contract=Month-to-month + MonthlyCharges=alto,InternetService=Fiber optic,3,0.1787590515405367,0.9960443037974683,2.265872103244693
+MonthlyCharges=alto + PaymentMethod=Electronic check,InternetService=Fiber optic,3,0.1509300014198495,0.9779208831646733,2.224643662832298
+PaperlessBilling=Yes + StreamingTV=Yes,MonthlyCharges=alto,3,0.202896492971745,0.7217171717171718,2.1657665276540436
+MonthlyCharges=alto,PaperlessBilling=Yes + StreamingTV=Yes,3,0.202896492971745,0.6088623775031955,2.165766527654043
+PaperlessBilling=Yes + StreamingMovies=Yes,MonthlyCharges=alto,3,0.20147664347579156,0.7184810126582278,2.1560552927788232
+MonthlyCharges=alto,PaperlessBilling=Yes + StreamingMovies=Yes,3,0.20147664347579156,0.6046016190881977,2.1560552927788232
+MonthlyCharges=alto + PaperlessBilling=Yes,InternetService=Fiber optic,3,0.24180036916086894,0.9466370205669816,2.1534769172652624
+MonthlyCharges=alto,InternetService=Fiber optic + PaperlessBilling=Yes,3,0.24180036916086894,0.7256071580741371,2.1338000894848217
+InternetService=Fiber optic + PaperlessBilling=Yes,MonthlyCharges=alto,3,0.24180036916086894,0.7110647181628392,2.1338000894848217
+MonthlyCharges=alto,InternetService=Fiber optic,2,0.3081073406218941,0.9245845760545377,2.10331045515249
+InternetService=Fiber optic,MonthlyCharges=alto,2,0.3081073406218941,0.7009043927648579,2.10331045515249
+MonthlyCharges=alto + StreamingMovies=Yes,StreamingTV=Yes,3,0.21113162004827488,0.8042184964845862,2.0923941155304546
+Partner=Yes + StreamingMovies=Yes,MonthlyCharges=alto,3,0.15007809172227743,0.6949375410913872,2.085404815469382
+MonthlyCharges=alto + StreamingTV=Yes,StreamingMovies=Yes,3,0.21113162004827488,0.8072747014115091,2.0811258133386747
+MonthlyCharges=alto + MultipleLines=Yes,InternetService=Fiber optic,3,0.22646599460457192,0.9140401146131805,2.0793231677069217
+MonthlyCharges=alto + PaperlessBilling=Yes,StreamingTV=Yes,3,0.202896492971745,0.7943301834352419,2.0666669678368703
+MonthlyCharges=alto + StreamingMovies=Yes,InternetService=Fiber optic,3,0.23739883572341333,0.9042725797728502,2.0571032879005764
+MonthlyCharges=alto + StreamingTV=Yes,InternetService=Fiber optic,3,0.2364049410762459,0.9039087947882735,2.056275724061308
+MonthlyCharges=alto + Partner=Yes,StreamingMovies=Yes,3,0.15007809172227743,0.7953348382242287,2.0503452655978194
+MonthlyCharges=alto + Partner=Yes,InternetService=Fiber optic,3,0.16967201476643476,0.8991723100075244,2.0455008331340423
+MonthlyCharges=alto,StreamingTV=Yes,2,0.26153627715462163,0.7848317000426076,2.0419540684891335
+StreamingTV=Yes,MonthlyCharges=alto,2,0.26153627715462163,0.680458071666051,2.0419540684891335
+MonthlyCharges=alto + MultipleLines=Yes,StreamingTV=Yes,3,0.19423541104642908,0.7839541547277936,2.039670894624252
+MonthlyCharges=alto + PaperlessBilling=Yes,StreamingMovies=Yes,3,0.20147664347579156,0.7887715397443024,2.03342531274492
+MonthlyCharges=alto,StreamingMovies=Yes,2,0.262530171801789,0.787814230933106,2.0309574042686185
+StreamingMovies=Yes,MonthlyCharges=alto,2,0.262530171801789,0.6767935578330893,2.0309574042686185
+MonthlyCharges=alto + MultipleLines=Yes,StreamingMovies=Yes,3,0.19451938094561977,0.7851002865329513,2.023960950970562
+ServicosProtecao=baixo + StreamingTV=Yes,MonthlyCharges=alto,3,0.17151781911117422,0.6729805013927578,2.019514985645161
+ServicosProtecao=baixo + StreamingMovies=Yes,MonthlyCharges=alto,3,0.1718017890103649,0.6685082872928176,2.0060945323405686
+MonthlyCharges=alto + ServicosProtecao=baixo,StreamingTV=Yes,3,0.17151781911117422,0.769917144678139,2.0031497783406476
+InternetService=Fiber optic + PaymentMethod=Electronic check,MonthlyCharges=alto,3,0.1509300014198495,0.6664576802507837,1.9999409637862244
+InternetService=Fiber optic + MonthlyCharges=alto,StreamingTV=Yes,3,0.2364049410762459,0.7672811059907834,1.9962914035807489
+StreamingTV=Yes,InternetService=Fiber optic + MonthlyCharges=alto,3,0.2364049410762459,0.6150720354636128,1.9962914035807486
+MultipleLines=Yes + PaperlessBilling=Yes,MonthlyCharges=alto,3,0.1919636518529036,0.6630701324178518,1.989775433582842
+MonthlyCharges=alto + ServicosProtecao=baixo,StreamingMovies=Yes,3,0.1718017890103649,0.7711918419375399,1.988105469533709
+InternetService=Fiber optic + MonthlyCharges=alto,StreamingMovies=Yes,3,0.23739883572341333,0.7705069124423963,1.9863397453630298
+StreamingMovies=Yes,InternetService=Fiber optic + MonthlyCharges=alto,3,0.23739883572341333,0.6120058565153734,1.9863397453630298
+MultipleLines=Yes + StreamingMovies=Yes,StreamingTV=Yes,3,0.17165980406076956,0.759899434318039,1.9770859681942918
+MultipleLines=Yes + StreamingTV=Yes,StreamingMovies=Yes,3,0.17165980406076956,0.7666455294863664,1.9763852357878766
+InternetService=Fiber optic + StreamingMovies=Yes,StreamingTV=Yes,3,0.18600028396989918,0.7481439177612792,1.9465007804923122
+Partner=Yes + StreamingMovies=Yes,StreamingTV=Yes,3,0.1611529177907142,0.7462195923734386,1.9414941223073985
+InternetService=Fiber optic + StreamingTV=Yes,StreamingMovies=Yes,3,0.18600028396989918,0.7485714285714284,1.9297908387366656
+Partner=Yes + PaymentMethod=Automatic,tenure=alto,3,0.15760329405083062,0.6303236797274276,1.9276464074339004
+Partner=Yes + StreamingTV=Yes,StreamingMovies=Yes,3,0.1611529177907142,0.7462195923734386,1.9237278876596369
+PaperlessBilling=Yes + StreamingMovies=Yes,StreamingTV=Yes,3,0.2048842822660798,0.730632911392405,1.9009411137557106
+MonthlyCharges=alto,InternetService=Fiber optic + ServicosProtecao=baixo,3,0.222774385915093,0.6685129953131657,1.8916581060629272
+InternetService=Fiber optic + ServicosProtecao=baixo,MonthlyCharges=alto,3,0.222774385915093,0.6303736440337484,1.891658106062927
+PaperlessBilling=Yes + StreamingTV=Yes,StreamingMovies=Yes,3,0.2048842822660798,0.7287878787878788,1.8787895425706553
+Contract=Month-to-month + MultipleLines=Yes,InternetService=Fiber optic,3,0.1727956836575323,0.8211875843454791,1.8680956577988403
+StreamingTV=Yes,StreamingMovies=Yes,2,0.2754508022149652,0.7166605097894347,1.8475256114374043
+StreamingMovies=Yes,StreamingTV=Yes,2,0.2754508022149652,0.7101024890190336,1.8475256114374043
+Contract=Month-to-month + InternetService=Fiber optic,PaymentMethod=Electronic check,3,0.18557432912111316,0.6141917293233083,1.8290707609404064
+MonthlyCharges=alto + PaperlessBilling=Yes,MultipleLines=Yes,3,0.1919636518529036,0.7515286270150083,1.781560457780782
+MultipleLines=Yes + StreamingTV=Yes,InternetService=Fiber optic,3,0.1740735482038904,0.7774254914394421,1.7685425504547774
+MonthlyCharges=alto,MultipleLines=Yes,2,0.24776373704387336,0.7435023434171282,1.7625334919847975
+MonthlyCharges=alto + StreamingTV=Yes,MultipleLines=Yes,3,0.19423541104642908,0.7426710097719869,1.7605627471639527
+MonthlyCharges=medio,InternetService=DSL,2,0.20147664347579156,0.6051172707889125,1.760363873674643
+MultipleLines=Yes + StreamingMovies=Yes,InternetService=Fiber optic,3,0.17449950305267642,0.7724701445631679,1.757269776536948
+MonthlyCharges=alto + StreamingMovies=Yes,MultipleLines=Yes,3,0.19451938094561977,0.7409410492157924,1.7564617332974841
+InternetService=Fiber optic + MonthlyCharges=alto,MultipleLines=Yes,3,0.22646599460457192,0.7350230414746544,1.742432608921572
+ServicosProtecao=baixo + StreamingMovies=Yes,StreamingTV=Yes,3,0.17109186426238818,0.6657458563535911,1.7321197141848326
+ServicosProtecao=baixo + StreamingTV=Yes,StreamingMovies=Yes,3,0.17109186426238818,0.6713091922005571,1.7306115082974098
+PaperlessBilling=Yes + tenure=baixo,Contract=Month-to-month,3,0.1889819679114014,0.9513938527519656,1.729204362563121
+MultipleLines=Yes + PaperlessBilling=Yes,InternetService=Fiber optic,3,0.2197927019735908,0.7591956841589014,1.7270720941638056
+MonthlyCharges=alto + ServicosProtecao=baixo,MultipleLines=Yes,3,0.16200482748828623,0.727214786488209,1.7239224978917724
+Dependents=Yes,Partner=Yes,2,0.2483316768422547,0.8289099526066351,1.7160531440942186
+Dependents=Yes,Partner=Yes + ServicosProtecao=baixo,3,0.17989493113729946,0.6004739336492891,1.7122015848955234
+tenure=baixo,Contract=Month-to-month + ServicosProtecao=baixo,3,0.2946187704103365,0.8751581611134542,1.7055171357836354
+PaperlessBilling=Yes + PaymentMethod=Electronic check,InternetService=Fiber optic,3,0.18245066023001563,0.7376578645235362,1.6780763371573855
+Dependents=Yes + ServicosProtecao=baixo,Partner=Yes,3,0.17989493113729946,0.8054672600127146,1.6675208442885212
+InternetService=Fiber optic + StreamingMovies=Yes,MultipleLines=Yes,3,0.17449950305267642,0.7018846373500857,1.6638752948019702
+InternetService=Fiber optic + StreamingTV=Yes,MultipleLines=Yes,3,0.1740735482038904,0.7005714285714286,1.6607622253209597
+ServicosProtecao=baixo + tenure=baixo,Contract=Month-to-month,3,0.2946187704103365,0.9092900964066609,1.6526787481269969
+InternetService=Fiber optic + MultipleLines=Yes,StreamingTV=Yes,3,0.1740735482038904,0.6326109391124871,1.6459101751641103
+ServicosProtecao=baixo + StreamingTV=Yes,InternetService=Fiber optic,3,0.18358653982677836,0.7203342618384402,1.6386673792403534
+tenure=baixo,Contract=Month-to-month,2,0.3028538974868664,0.8996204133277099,1.6351036312431126
+InternetService=Fiber optic + MultipleLines=Yes,StreamingMovies=Yes,3,0.17449950305267642,0.6341589267285861,1.6348394293372737
+ServicosProtecao=baixo + StreamingMovies=Yes,InternetService=Fiber optic,3,0.18301860002839698,0.7121546961325966,1.6200599240509943
+PaperlessBilling=Yes + StreamingTV=Yes,InternetService=Fiber optic,3,0.19906289933267074,0.7080808080808081,1.610792355075301
+Contract=Month-to-month + PaymentMethod=Electronic check,InternetService=Fiber optic,3,0.18557432912111316,0.7064864864864865,1.6071654794329213
+PaperlessBilling=Yes + StreamingMovies=Yes,InternetService=Fiber optic,3,0.19608121539116855,0.6992405063291139,1.5906818107480456
+Partner=Yes + tenure=alto,PaymentMethod=Automatic,3,0.15760329405083062,0.680564071122011,1.5633440159531389
+Contract=Two year,PaymentMethod=Automatic,2,0.1625727672866676,0.6755162241887905,1.5517484562823392
+MultipleLines=Yes + ServicosProtecao=baixo,InternetService=Fiber optic,3,0.21070566519948886,0.6813590449954087,1.5500037964801885
+PaymentMethod=Electronic check + ServicosProtecao=baixo,InternetService=Fiber optic,3,0.20105068862700554,0.6801152737752162,1.5471743776482065
+tenure=alto,PaymentMethod=Automatic,2,0.21894079227601873,0.6695614415979158,1.5380695476758386
+StreamingMovies=Yes + StreamingTV=Yes,InternetService=Fiber optic,3,0.18600028396989918,0.6752577319587628,1.5361240976051571
+PaymentMethod=Electronic check + ServicosProtecao=baixo,Contract=Month-to-month,3,0.2496095413886128,0.8443804034582133,1.534702240401599
+PaymentMethod=Electronic check,InternetService=Fiber optic,2,0.22646599460457192,0.6744186046511629,1.5342151913947482
+InternetService=Fiber optic + PaperlessBilling=Yes,MultipleLines=Yes,3,0.2197927019735908,0.6463465553235909,1.5322177008226356
+PaymentMethod=Automatic + tenure=alto,Partner=Yes,3,0.15760329405083062,0.7198443579766538,1.4902597922485517
+InternetService=Fiber optic + PaymentMethod=Electronic check,Contract=Month-to-month,3,0.18557432912111316,0.8194357366771159,1.489364101526949
+Contract=Month-to-month + PaperlessBilling=Yes,InternetService=Fiber optic,3,0.23981257986653415,0.6531322505800464,1.4857914860579027
+MultipleLines=Yes,InternetService=Fiber optic,2,0.27516683231577455,0.6523056210030292,1.4839110105698756
+InternetService=Fiber optic,MultipleLines=Yes,2,0.27516683231577455,0.625968992248062,1.4839110105698756
+StreamingMovies=Yes + StreamingTV=Yes,MultipleLines=Yes,3,0.17165980406076956,0.6231958762886598,1.4773371109730833
+StreamingTV=Yes,InternetService=Fiber optic,2,0.24847366179185007,0.6464721093461396,1.4706405252341284
+tenure=alto,Partner=Yes,2,0.23157745279000427,0.7082066869300913,1.4661668712665
+tenure=alto,MultipleLines=Yes,2,0.20133465852619623,0.6157186278766826,1.4596116782684199
+StreamingMovies=Yes,InternetService=Fiber optic,2,0.2486156467414454,0.6409224011713031,1.4580156561529352
+PaperlessBilling=Yes + PaymentMethod=Electronic check,Contract=Month-to-month,3,0.19835297458469403,0.8019517795637199,1.4575861634754268
+Contract=Two year,Partner=Yes,2,0.16924605991764874,0.7032448377581121,1.4558945891623702
+PaymentMethod=Electronic check,Contract=Month-to-month + ServicosProtecao=baixo,3,0.2496095413886128,0.7433403805496829,1.448629302770176
+InternetService=Fiber optic + ServicosProtecao=baixo,Contract=Month-to-month,3,0.281556155047565,0.7967055042185617,1.4480508041835691
+PaperlessBilling=Yes + StreamingTV=Yes,MultipleLines=Yes,3,0.16995598466562545,0.6045454545454545,1.4331247513845964
+PaperlessBilling=Yes + StreamingMovies=Yes,MultipleLines=Yes,3,0.16896209001845805,0.6025316455696202,1.4283508514799177
+PaymentMethod=Electronic check,Contract=Month-to-month,2,0.26267215675138433,0.7822410147991543,1.421760894769147
+PaymentMethod=Electronic check,PaperlessBilling=Yes + ServicosProtecao=baixo,3,0.2195087320744001,0.6536997885835095,1.3871671018359921
+MonthlyCharges=medio + ServicosProtecao=baixo,Contract=Month-to-month,3,0.19224762175209428,0.7543175487465181,1.3710086440830265
+InternetService=Fiber optic + PaymentMethod=Electronic check,PaperlessBilling=Yes,3,0.18245066023001563,0.8056426332288401,1.3603790615753346
+InternetService=Fiber optic + StreamingTV=Yes,PaperlessBilling=Yes,3,0.19906289933267074,0.8011428571428572,1.3527809021474808
+InternetService=Fiber optic + MultipleLines=Yes,PaperlessBilling=Yes,3,0.2197927019735908,0.7987616099071206,1.3487600140435987
+MonthlyCharges=alto + ServicosProtecao=baixo,PaperlessBilling=Yes,3,0.1777651568933693,0.7979604843849586,1.3474072624126738
+Contract=Month-to-month + InternetService=Fiber optic,PaperlessBilling=Yes,3,0.23981257986653415,0.7937030075187971,1.340218240698846
+InternetService=Fiber optic + StreamingMovies=Yes,PaperlessBilling=Yes,3,0.19608121539116855,0.788692175899486,1.3317571313498153
+InternetService=Fiber optic,PaperlessBilling=Yes + ServicosProtecao=baixo,3,0.2754508022149652,0.6266149870801033,1.329692483882244
+InternetService=Fiber optic + MonthlyCharges=alto,PaperlessBilling=Yes,3,0.24180036916086894,0.7847926267281106,1.3251724934179052
+Contract=Month-to-month + MultipleLines=Yes,PaperlessBilling=Yes,3,0.1645605565810024,0.782051282051282,1.320543557776835
+Contract=Month-to-month,PaperlessBilling=Yes + ServicosProtecao=baixo,3,0.34218372852477635,0.6219354838709678,1.3197624624595439
+PaperlessBilling=Yes + ServicosProtecao=baixo,Contract=Month-to-month,3,0.34218372852477635,0.7261223260018077,1.3197624624595437
+InternetService=Fiber optic + ServicosProtecao=baixo,PaperlessBilling=Yes,3,0.2754508022149652,0.7794294897549217,1.3161164939688115
+MonthlyCharges=alto + StreamingTV=Yes,PaperlessBilling=Yes,3,0.202896492971745,0.7757871878393051,1.3099662344646907
+MonthlyCharges=alto + MultipleLines=Yes,PaperlessBilling=Yes,3,0.1919636518529036,0.7747851002865329,1.3082741456049032
+InternetService=Fiber optic,PaperlessBilling=Yes,2,0.3400539542808462,0.773578811369509,1.3062372496944261
+InternetService=Fiber optic + Partner=Yes,PaperlessBilling=Yes,3,0.16427658668181172,0.7733957219251337,1.3059280914693638
+ServicosProtecao=baixo + StreamingTV=Yes,PaperlessBilling=Yes,3,0.19636518529035923,0.7704735376044569,1.300993796535169
+MonthlyCharges=alto + ServicosProtecao=baixo,Contract=Month-to-month,3,0.1588811585971887,0.7131931166347993,1.2962629988281011
+MonthlyCharges=alto + StreamingMovies=Yes,PaperlessBilling=Yes,3,0.20147664347579156,0.7674418604651163,1.2958746159807752
+MonthlyCharges=alto,PaperlessBilling=Yes,2,0.25543092432202186,0.7665104388581166,1.2943018510855226
+InternetService=Fiber optic + PaperlessBilling=Yes,Contract=Month-to-month,3,0.23981257986653415,0.7052192066805846,1.2817700316519631
+MultipleLines=Yes + StreamingTV=Yes,PaperlessBilling=Yes,3,0.16995598466562545,0.7590361445783133,1.281681027634874
+ServicosProtecao=baixo + StreamingMovies=Yes,PaperlessBilling=Yes,3,0.1949453357944058,0.7585635359116021,1.2808829977044864
+Contract=Month-to-month + PaymentMethod=Electronic check,PaperlessBilling=Yes,3,0.19835297458469403,0.7551351351351352,1.2750939239407233
+MultipleLines=Yes + StreamingMovies=Yes,PaperlessBilling=Yes,3,0.16896209001845805,0.7479572595851666,1.2629736224546457
+StreamingMovies=Yes + StreamingTV=Yes,PaperlessBilling=Yes,3,0.2048842822660798,0.7438144329896907,1.2559781950482838
+PaymentMethod=Electronic check + ServicosProtecao=baixo,PaperlessBilling=Yes,3,0.2195087320744001,0.7425552353506244,1.253851959380112
+InternetService=No,ServicosProtecao=baixo,2,0.21666903308249325,1.0,1.2505326704545454
+InternetService=No + MonthlyCharges=baixo,ServicosProtecao=baixo,3,0.21666903308249325,1.0,1.2505326704545454
+InternetService=Fiber optic,Contract=Month-to-month,2,0.30214397273888965,0.6873385012919896,1.2492709844127698
+InternetService=Fiber optic,Contract=Month-to-month + ServicosProtecao=baixo,3,0.281556155047565,0.6405038759689923,1.2482204754979558
+InternetService=DSL + ServicosProtecao=baixo,Contract=Month-to-month,3,0.15717733920204457,0.6846011131725417,1.2442956490514094
+PaymentMethod=Electronic check,PaperlessBilling=Yes,2,0.2473377821950873,0.7365750528541226,1.243754039139675
+StreamingTV=Yes,PaperlessBilling=Yes,2,0.28113020019877893,0.731437015145918,1.2350781341818988
+Contract=Month-to-month + MonthlyCharges=baixo,ServicosProtecao=baixo,3,0.16200482748828623,0.986171132238548,1.233239219523454
+StreamingMovies=Yes,PaperlessBilling=Yes,2,0.2804202754508022,0.722913616398243,1.2206858308062396
+Contract=Month-to-month + tenure=baixo,ServicosProtecao=baixo,3,0.2946187704103365,0.9728082512892638,1.2165285003249795
+PaperlessBilling=Yes + tenure=baixo,ServicosProtecao=baixo,3,0.19224762175209428,0.9678341672623302,1.2103082457437129
+MonthlyCharges=baixo,ServicosProtecao=baixo,2,0.3220218656822377,0.9646958740961293,1.2063837076099144
+tenure=baixo,ServicosProtecao=baixo,2,0.32400965497657247,0.962463095740194,1.2035915453299335

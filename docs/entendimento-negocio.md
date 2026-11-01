@@ -6,8 +6,8 @@
     
 
 ???+ abstract "Fase 2: Entendimento de negócio"
-    - [ ] Elaborar projeto inicial
-    - [ ] Produzir relatório mineração dos dados
+    - [x] Elaborar projeto inicial
+    - [x] Produzir relatório mineração dos dados
 
 ???+ abstract "Fase 3: Entendimento dos dados"    
     - [x] Gerar conjunto de dados
@@ -22,19 +22,19 @@
     - [x] Produzir relatório preparação dos dados
 
 ???+ abstract "Fase 5: Modelagem"
-    - [ ] Gerar desenho do experimento da modelagem
-    - [ ] Gerar script da modelagem
-    - [ ] Produzir relatório com os resultados
+    - [x] Gerar desenho do experimento da modelagem
+    - [x] Gerar script da modelagem
+    - [x] Produzir relatório com os resultados
 
 ???+ abstract "Fase 6: Avaliação"
-    - [ ] Produzir relatório da avaliação dos resultados
-    - [ ] Produzir relatório das próximas etapas
+    - [x] Produzir relatório da avaliação dos resultados
+    - [x] Produzir relatório das próximas etapas
 
 ???+ abstract "Fase 7: Implementação"
-    - [ ] Gerar desenho da implementação
-    - [ ] Desenvolver script da implementação
-    - [ ] Produzir relatório de monitoramento e manutenção dos modelos
-    - [ ] Produzir relatório final contendo todas as fases anteriores
+    - [x] Gerar desenho da implementação
+    - [x] Desenvolver script da implementação
+    - [x] Produzir relatório de monitoramento e manutenção dos modelos
+    - [x] Produzir relatório final contendo todas as fases anteriores
 
 ## Avaliar a situação
 A avaliação da situação de um projeto de ciência de dados é crucial para garantir o sucesso do projeto e maximizar o retorno sobre o investimento. Aqui estão algumas razões pelas quais é importante avaliar a situação de um projeto de ciência de dados:
@@ -43,6 +43,7 @@ A avaliação da situação de um projeto de ciência de dados é crucial para g
 - Requisitos do projeto
 - Riscos
 - Análise custo-benefício
+- Valor para o Negócio
 
 Em resumo, a avaliação da situação de um projeto de ciência de dados é uma etapa crítica no processo de tomada de decisão e pode ajudar a maximizar o sucesso e o retorno sobre o investimento. Por isso, é importante dedicar tempo e esforços adequados para avaliar a situação do projeto antes de iniciá-lo.
 
@@ -54,37 +55,70 @@ Um time técnico é responsável por garantir a eficiência e a qualidade de pro
 
 |Nome|Cargo/ Função|E-mail|
 |:---|:------------|:-----|
-|Stevens Castro|Integrante do grupo|—|
-|Tevin|Integrante do grupo|—|
-|Thierry Pereira Canoco|Integrante do grupo|—|
+|Stevens Castro|Ciêntista de Dados| stevens.castro@yahoo.com.br|
+|Thierry Pereira Canoco|Cientista de Dados|tcanoco@gmail.com|
 
-#### Esecialistas de negócio
+#### Especialistas de negócio
 Especialistas de negócios são indivíduos altamente qualificados que têm um conhecimento profundo da indústria e das operações de negócios da área. Eles trabalham em colaboração com equipes de tecnologia de dados para identificar oportunidades de melhoria em processos e tomar decisões informadas com base em dados. Eles também ajudam a definir objetivos e métricas claras para o projeto de dados, garantindo que ele esteja alinhado à estratégia de negócios geral da área. A presença de especialistas de negócios é crucial em projetos de dados, pois eles ajudam a garantir que os resultados sejam valiosos e relevantes para a empresa. Abaixo segue o time de especialistas para esse projeto:
 
-<span style="color:red">**Adicione um texto**</span>
+**Time de Négocio**
 
 |Nome    |Cargo/ Função|E-mail|
 |:-------|:------------|:-----|
-|Especialista de negócio 1| Função 1| email@exemplo.com|
-|Especialista de negócio 2| Função 2| email@exemplo.com|
-|Especialista de negócio 3| Função 3| email@exemplo.com|
+|Especialista de negócio 1| Gerente Comercial | gerente@teuco_customer.com|
+|Especialista de negócio 2| Vendedor| vendedor@teuco_customer.com|
+|Especialista de negócio 3| Analista de Marketing| marketing@teuco_customer.com|
+|Especialista de negócio 3| Gerente Financieiro| financeiro@teuco_customer.com|
 
 #### Equipe de infraestrutura
 A equipe de infraestrutura é responsável por fornecer a base tecnológica necessária para o sucesso de um projeto de ciência de dados. Eles gerenciam os recursos de computação, armazenamento e rede para suportar a coleta, processamento e análise de grandes quantidades de dados. Além disso, eles também fornecem segurança e backup dos dados, garantindo que eles estejam protegidos contra possíveis falhas ou ameaças. A equipe de infraestrutura é uma parte crucial do projeto de ciência de dados, pois sem uma infraestrutura robusta e confiável, a equipe de ciência de dados não poderá realizar suas tarefas e entregar resultados significativos.
 
 |Nome    |Cargo/ Função|E-mail|
 |:-------|:------------|:-----|
-|Membro da infraestrutura 1| Líder infraestrutura| infra1@exemplo.com|
-|Membro da infraestrutura 2| Infraestrutura | infra2@exemplo.com|
-|Membro da infraestrutura 3| Devops | infra3@exemplo.com|
+|Coordenador | Líder infraestrutura| infra@teuco_customer.com|
+|Analista de infraestrutura | Segurança da Informação | infra@teuco_customer.com|
+|Analista de infraestrutura | Devops | infra@teuco_customer.com|
 
 #### Recursos financeiros
-<span style="color:red">**Adicione um texto**</span>
+## 0. Verba para retenção de clientes
 
-### Requisitos do projeto
+- Verba para retençao de até 5 grupos de clientes conforme restrição do projeto. Caso o modelo retorno mais de 5 grupos, o excedente não serão considerados
+
+## 1. Custo de Equipe (Alocação de 2 meses)
+
+| Perfil | Quantidade | Custo Mensal Unitário (R$) | Custo Total (2 meses) (R$) |
+| :--- | :--- | :--- | :--- |
+| **Gerente de Projetos de TI (com foco em Dados)** | 1 | R$ 22.000 | R$ 44.000 |
+| **Cientista de Dados** | 2 | R$ 15.000 | R$ 60.000 |
+| **Engenheiro de Dados** | 1 | R$ 15.000 | R$ 30.000 |
+| **Analista de Infraestrutura/Cloud** | 3 | R$ 10.000 | R$ 60.000 |
+| **Gerente Comercial (Telecom)** | 1 | R$ 18.000 | R$ 36.000 |
+| **Vendedor / Operação de Retenção** | 1 | R$ 7.000 | R$ 14.000 |
+| **Subtotal Equipe** | **9** | **R$ 122.000** | **R$ 244.000** |
+
+## 2. Custo de Infraestrutura e Licenças (OPEX)
+
+*Premissas: Banco de dados com alto volume (milhares de assinantes) e rotinas de atualização rodando 2 vezes ao dia.*
+
+| Recurso | Descrição do Uso | Custo Mensal Estimado (R$) | Custo Total (2 meses) (R$) |
+| :--- | :--- | :--- | :--- |
+| **AWS (Amazon)** | Hospedagem de dados brutos (S3), servidores de aplicação e processamento dos cálculos matemáticos. | R$ 8.500 | R$ 17.000 |
+| **Snowflake** | Armazenamento analítico de alta performance e poder de computação para as 2 atualizações diárias da base. | R$ 4.500 | R$ 9.000 |
+| **Subtotal Infraestrutura** | | **R$ 13.000** | **R$ 26.000** |
+
+---
+
+## Resumo do Investimento (Timebox de 8 semanas)
+
+*   **Custo Total Mensal (Equipe + Infraestrutura):** R$ 135.000
+*   **Investimento Total do Projeto (2 meses):** **R$ 270.000**
+
+> **Nota para os Executivos:** O investimento de **R$ 270 mil** é o custo para criar o motor que define as regras de negócio. O retorno financeiro será medido pelo aumento da retenção e pela economia gerada ao não oferecer descontos (verba de retenção) para clientes que não pertencem aos grupos de risco mapeados.
+
+### **Requisitos do projeto**
 A análise de requisitos é uma etapa iterativa e pode exigir várias revisões para garantir que todos os requisitos sejam cobertos e validados pelos stakeholders. Além disso, é importante manter uma comunicação clara e frequente com todas as partes interessadas para garantir que todos os requisitos sejam identificados e considerados no projeto.
 
-#### Necessidades de negócio
+#### **Necessidades de negócio**
 A operadora perde cerca de **1 em cada 4 clientes** (26,5% da base cancelou). Para reduzir
 essa perda, a área de retenção precisa saber **quais tipos de cliente existem** na carteira
 e o que caracteriza cada um: que contrato têm, que serviços usam, como pagam e há quanto
@@ -92,10 +126,13 @@ tempo estão na empresa. Com esses perfis em mãos, dá para planejar ações di
 cada grupo (por exemplo, oferecer contrato anual a quem está no mensal, ou serviços de
 proteção a quem não tem nenhum), em vez de tratar todos os clientes do mesmo jeito.
 
-#### Requisitos funcionais
-<span style="color:red">**Adicione um texto**</span>
+#### **Requisitos funcionais**
 
-#### Requisitos técnicos
+- O modelo deve segmentar e classificar os cliente da Empresa Telco , de maneira que seja agrupoas em no máximo 5 grupos. 
+- Cada grupos deve ter sugestões de ações de retençao para que possamos utilizar as verba em caso de aprovação da açãoesrecomendadas.
+- Prazo de 60 dias para entrega do modelo funcionado a partir da base de testes disponibilizada. 
+
+#### **Requisitos técnicos**
 No que tange ao campo ciência de dados dentro de projetos que envolvem essa área, almeja-se extrair insights significativos sobre os dados do projeto, para os interessados das áreas de negócio, utilizando-se uma abordagem multidisciplinar que combina princípios e práticas das áreas de matemática, estatística, inteligência artificial e engenharia da computação.
 
 |Ferramenta            | Descrição                            |
@@ -107,7 +144,7 @@ No que tange ao campo ciência de dados dentro de projetos que envolvem essa ár
 |:fontawesome-solid-list-check: Python|Realizar a leitura e o tratamento dos dados, a análise exploratória e a construção dos modelos de agrupamento.|
 |:material-bookshelf: Bibliotecas|pandas e numpy (tabelas e contas), matplotlib e seaborn (gráficos), scipy (V de Cramér), prince (análise de correspondência), circlify (gráficos de círculos), scikit-learn (pré-processamento e agrupamento), umap-learn e mlxtend (modelagem).|
 
-#### Requisitos de dados
+#### **Requisitos de dados**
 Para segmentar os clientes, o projeto precisa de **uma linha por cliente** com
 informações sobre:
 
@@ -122,7 +159,7 @@ A base *Telco Customer Churn* atende a todos esses pontos (veja
 [Entendimento dos dados](entendimento-dados.md)). Ela **não** tem datas, dados de uso ou
 registros de atendimento, o que limita o que pode ser respondido.
 
-### Riscos
+### **Riscos**
 Os projetos de ciência de dados apresentam alguns riscos que devem ser considerados e gerenciados para garantir o sucesso do projeto. Alguns dos riscos mais comuns incluem:
 
 - Qualidade dos dados: A qualidade dos dados é uma preocupação crítica na ciência de dados, pois dados ruins podem levar a resultados errados ou imprecisos.
@@ -133,8 +170,24 @@ Os projetos de ciência de dados apresentam alguns riscos que devem ser consider
 
 É importante identificar e gerenciar estes riscos com antecedência para garantir o sucesso do projeto de ciência de dados.
 
-### Análise custo-benefício
-<span style="color:red">**Adicione um texto**</span>
+### **Análise custo-benefício**
+O projeto de segmentação de clientes apresenta forte viabilidade estratégica, transformando dados não utilizados em inteligência de negócios estritamente alinhada à nossa limitação de cinco ofertas de retenção.
+
+**Benefícios Diretos**
+
+- Inteligência Prática: Aplicação de análise de dados para agrupar clientes pelo seu comportamento real, resolvendo o problema de não termos categorias pré-definidas.
+
+- Adequação ao Orçamento: O trabalho será configurado para encontrar e entregar no máximo cinco perfis de clientes, garantindo que o resultado possa ser totalmente absorvido e executado pela operação.
+
+- Ações Direcionadas: Identificação clara das características de cada grupo (ex: alto consumo de internet vs. atraso em faturas), indicando exatamente qual oferta tem mais chance de sucesso para cada perfil.
+
+**Ganhos Possíveis**
+
+- Redução de Cancelamentos: Antecipação da saída de assinantes focando o esforço de retenção nos grupos identificados com maior risco de abandono.
+
+- Eficiência Financeira: Fim do desperdício de dinheiro com ofertas genéricas, aplicando a verba de retenção de forma cirúrgica nos clientes com maior probabilidade de aceitação.
+
+- Aumento da Receita por Cliente: Prolongamento do tempo de contrato e da rentabilidade dos assinantes ao alinhar os serviços oferecidos à necessidade real de uso de cada grupo.
 
 ## Mineração de dados
 Neste projeto não há coleta em sistemas da empresa: usamos um único arquivo público, a

@@ -1,0 +1,23 @@
+coluna,decisao,motivo
+TotalCharges,Fora,"Derivada de tenure × MonthlyCharges (Spearman 0,89 com tenure); contaria o tempo de casa duas vezes"
+gender,Fora,"V de Cramér máximo 0,02 com as demais colunas: não estrutura nada, só acrescenta ruído"
+ServicosProtecao,Criada,"Contagem (0 a 4) de OnlineSecurity, OnlineBackup, DeviceProtection e TechSupport"
+OnlineSecurity,Fora,"Resumida em ServicosProtecao (V de Cramér 0,28 a 0,35 entre os quatro)"
+OnlineBackup,Fora,"Resumida em ServicosProtecao (V de Cramér 0,28 a 0,35 entre os quatro)"
+DeviceProtection,Fora,"Resumida em ServicosProtecao (V de Cramér 0,28 a 0,35 entre os quatro)"
+TechSupport,Fora,"Resumida em ServicosProtecao (V de Cramér 0,28 a 0,35 entre os quatro)"
+PaymentMethod,Agrupada,Bank transfer e Credit card (automatic) viram Automatic: perfis idênticos
+tenure,Entra,Numérica: escalonada para 0 a 1
+MonthlyCharges,Entra,Numérica: escalonada para 0 a 1
+ServicosProtecao,Entra,Numérica: escalonada para 0 a 1
+SeniorCitizen,Entra,Binária: uma coluna 0/1
+Partner,Entra,Binária: uma coluna 0/1
+Dependents,Entra,Binária: uma coluna 0/1
+PhoneService,Entra,Binária: uma coluna 0/1
+MultipleLines,Entra,Binária: uma coluna 0/1
+StreamingTV,Entra,Binária: uma coluna 0/1
+StreamingMovies,Entra,Binária: uma coluna 0/1
+PaperlessBilling,Entra,Binária: uma coluna 0/1
+InternetService,Entra,3 categorias: uma coluna 0/1 por categoria
+Contract,Entra,3 categorias: uma coluna 0/1 por categoria
+PaymentMethod,Entra,3 categorias: uma coluna 0/1 por categoria

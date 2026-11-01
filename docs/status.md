@@ -9,8 +9,8 @@ Situação em 30/10/2026: fases de entendimento e preparação dos dados conclu�
     
 
 ???+ abstract "Fase 2: Entendimento de negócio"
-    - [ ] Elaborar projeto inicial
-    - [ ] Produzir relatório mineração dos dados
+    - [x] Elaborar projeto inicial
+    - [N/A] Produzir relatório mineração dos dados
 
 ???+ abstract "Fase 3: Entendimento dos dados"    
     - [x] Gerar conjunto de dados (dicionário de dados — notebook 00)
@@ -25,16 +25,16 @@ Situação em 30/10/2026: fases de entendimento e preparação dos dados conclu�
     - [x] Produzir relatório preparação dos dados ([Preparação dos dados](preparacao.md))
 
 ???+ abstract "Fase 5: Modelagem"
-    - [ ] Gerar desenho do experimento da modelagem
-    - [ ] Gerar script da modelagem
-    - [ ] Produzir relatório com os resultados
+    - [x] Gerar desenho do experimento da modelagem
+    - [x] Gerar script da modelagem
+    - [x] Produzir relatório com os resultados
 
 ???+ abstract "Fase 6: Avaliação"
-    - [ ] Produzir relatório da avaliação dos resultados
-    - [ ] Produzir relatório das próximas etapas
+    - [x] Produzir relatório da avaliação dos resultados
+    - [x] Produzir relatório das próximas etapas
 
 ???+ abstract "Fase 7: Implementação"
-    - [ ] Gerar desenho da implementação
-    - [ ] Desenvolver script da implementação
-    - [ ] Produzir relatório de monitoramento e manutenção dos modelos
-    - [ ] Produzir relatório final contendo todas as fases anteriores
+    - [x] Gerar desenho da implementação
+    - [x] Desenvolver script da implementação
+    - [x] Produzir relatório de monitoramento e manutenção dos modelos
+    - [x] Produzir relatório final contendo todas as fases anteriores

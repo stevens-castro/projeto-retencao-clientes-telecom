@@ -1,0 +1,7 @@
+{
+  "modelo": "dbscan",
+  "params": "{'eps': 1.42}",
+  "grupos": 3,
+  "silhueta": 0.1868939360748758,
+  "arquivo": "model_telecom_dbscan.joblib"
+}

@@ -1,0 +1,95 @@
+{
+  "modelo": {
+    "modelo": "dbscan",
+    "params": "{'eps': 1.42}",
+    "grupos": 3,
+    "silhueta": 0.1868939360748758,
+    "arquivo": "model_telecom_dbscan.joblib"
+  },
+  "nomes": {
+    "2": "Segmento A",
+    "0": "Segmento B",
+    "1": "Segmento C"
+  },
+  "segmento_alvo": "Segmento C",
+  "criterios": [
+    {
+      "critério": "Segmentos operáveis",
+      "meta": "2 a 5",
+      "obtido": "3",
+      "atende": true,
+      "crítico": true
+    },
+    {
+      "critério": "Menor segmento",
+      "meta": "≥ 10% da carteira",
+      "obtido": "21.7%",
+      "atende": true,
+      "crítico": true
+    },
+    {
+      "critério": "Cliente novo classificável",
+      "meta": "acurácia ≥ 85%",
+      "obtido": "100.0%",
+      "atende": true,
+      "crítico": true
+    },
+    {
+      "critério": "Segmentos estáveis",
+      "meta": "ARI ≥ 0.8",
+      "obtido": "0.994",
+      "atende": true,
+      "crítico": true
+    },
+    {
+      "critério": "Separação dos grupos",
+      "meta": "silhueta ≥ 0.25",
+      "obtido": "0.187 (Davies-Bouldin 2.05)",
+      "atende": false,
+      "crítico": false
+    },
+    {
+      "critério": "Segmentos além de uma variável",
+      "meta": "ARI com qualquer variável < 0.9",
+      "obtido": "1.000 (InternetService)",
+      "atende": false,
+      "crítico": false
+    },
+    {
+      "critério": "Cobertura da carteira",
+      "meta": "100% com segmento",
+      "obtido": "99.7%",
+      "atende": false,
+      "crítico": false
+    }
+  ],
+  "cenarios_financeiros": [
+    {
+      "cenario": "pessimista",
+      "receita_protegida": 0.02,
+      "ganho": 67721.74,
+      "custo_campanha": 46260,
+      "resultado_ano1": -48538.26,
+      "roi_ano1": -0.42
+    },
+    {
+      "cenario": "base",
+      "receita_protegida": 0.05,
+      "ganho": 169304.34,
+      "custo_campanha": 46260,
+      "resultado_ano1": 53044.34,
+      "roi_ano1": 0.46
+    },
+    {
+      "cenario": "otimista",
+      "receita_protegida": 0.08,
+      "ganho": 270886.94,
+      "custo_campanha": 46260,
+      "resultado_ano1": 154626.94,
+      "roi_ano1": 1.33
+    }
+  ],
+  "aprovado": true,
+  "proxima_acao": "Implantação",
+  "justificativa": "\n\n 4 de 7 critérios atendidos; \n\n críticos com falha: nenhum; \n\nresultado do ano 1 no cenário base: $53,044.\n"
+}

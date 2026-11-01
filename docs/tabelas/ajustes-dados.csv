@@ -1,0 +1,6 @@
+ajuste,motivo,registros_afetados
+Churn retirada (notebook 01),Projeto não supervisionado: trabalhamos como se o rótulo não existisse,0
+Duplicados mantidos,"Linhas iguais, todas com tenure 1: clientes novos diferentes com o mesmo perfil",0
+TotalCharges vazio = 0,Clientes com tenure 0 ainda não foram cobrados (TotalCharges ≈ tenure × MonthlyCharges),11
+SeniorCitizen 0/1 → No/Yes,Padronizar binárias; o 1 aparecia como outlier só por estar em escala numérica,7043
+No internet/phone service → No,"Categoria redundante com InternetService/PhoneService == ""No""",2208

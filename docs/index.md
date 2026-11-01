@@ -1,4 +1,4 @@
-# Retenção de clientes Telecom
+# Segmentação e Classisifcação para Retenção de clientes Telecom
 
 ## Introdução
 
@@ -26,9 +26,9 @@ Detalhes em [Fonte dos dados](fonte-dados.md) e [Entendimento dos dados](entendi
 ### Levantamento inicial
 
 !!! info "Tipo do projeto"
-    - [x] Análise exploratória
+    - [ ] Análise exploratória
     - [ ] Modelo preditivo
-    - [ ] Modelo de classificação
+    - [x] Modelo de classificação
     - [x] Modelo de agrupamento
     - [ ] Detecção de anomalias
 
@@ -66,12 +66,11 @@ flowchart TD
 
 | Nome                                                   | Cargo / Função          | E-mail |
 | :----------------------------------------------------- | :---------------------- | :----- |
-| <span style="color:red">**Nome do professor**</span>   | Professor da disciplina | —      |
+| **Aislan Freitas**   | Professor da disciplina | aislansf@gmail.com |
 
 ### Dados da equipe técnica
 
 | Nome                   | Cargo / Função      | E-mail |
 | :--------------------- | :------------------ | :----- |
-| Stevens Castro         | Integrante do grupo | —      |
-| Tevin                  | Integrante do grupo | —      |
-| Thierry Pereira Canoco | Integrante do grupo | —      |
+| Stevens Castro         | Integrante do grupo | stevens.castro@yahoo.com.br      |
+| Thierry Pereira Canoco | Integrante do grupo | tcanoco@gmail.com     |
